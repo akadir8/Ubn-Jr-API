@@ -12,7 +12,7 @@ app.post('/api/form', (req, res) => {
 
   // process form data here
 
-  res.send('Form data received!');
+  res.json(formData);
 });
 
 app.listen(5000, () => {
