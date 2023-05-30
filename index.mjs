@@ -1,6 +1,7 @@
 import app from './app.mjs'
 import './textEndPoint.mjs'
 import db from './mongoRepository.mjs';
+import './getData.mjs'
 
 app.post('/api/form', (req, res) => {
   {/*Bu satırda, Express uygulamasında POST metoduna gelen /api/form yolunda bir isteği ele almak için bir route tanımlanıyor.
