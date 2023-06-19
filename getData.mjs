@@ -6,7 +6,7 @@ const router = express.Router();
 router.get('/api/mongo/abdulkadir', async (req, res) => {
   try {
     let collection = await db.collection('texts');
-    let data = await collection.findOne(); // Modify this according to your requirements
+    let data = await collection.find().toArray(); // Fetch all documents and convert them to an array
     res.json(data);
   } catch (error) {
     console.error(error);
